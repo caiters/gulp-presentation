@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+  <title>Introducing GSAP | UNICORN</title>
+  <link rel="stylesheet" href="css/reveal.css" />
+  <link rel="stylesheet" href="css/theme/night.css" />
+  <link rel="stylesheet" href="css/rainbow.css" />
+  <style>
+  .reveal .speaker-notes { max-height: 50%; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Intro Slide -->
+      <section>
+        <h1>Introducing GSAP</h1>
+        <img style="background: transparent none; border: none; box-shadow: none; width: 150px" src="images/unicorn.png" />
+      </section>
+      <section>
+        <h2>Contents of the Talk</h2>
+        <ul>
+          <li>What is GSAP?</li>
+          <li>Why use GSAP instead of CSS?</li>
+          <li>GSAP simple animations</li>
+          <li>Attempting a complex animation with CSS vs GSAP</li>
+          <li>What other cool stuff can GSAP do?</li>
+          <li>Conclusions</li>
+        </ul>
+      </section>
+      <!-- What is GSAP? -->
+      <section>
+        <h2>What is GSAP?</h2>
+        <p class="fragment"><strong>G</strong>reen<strong>S</strong>ock <strong>A</strong>nimation <strong>P</strong>latform</p>
+        <p class="fragment"><a href="http://greensock.com/gsap" target="_blank">http://greensock.com/gsap</a></p>
+        <aside class="notes">
+          <p>GSAP is a powerful javascript animation library. The creators have emphasized both the power of GSAP and the performance, even on mobile devices.</p>
+        </aside>
+      </section>
+      <!-- Why use GSAP instead of CSS? -->
+      <section>
+        <section>
+          <h2>Why use GSAP instead of CSS?</h2>
+          <aside class="notes">
+            <p>Well, you wouldn't want to necessarily. For many sites and situations, CSS can handle all the animation you want with little or no downsides, without including another library.</p>
+            <p>GSAP does do some things that CSS doesn't. It supports various functions that CSS can do, but is compatible back to IE6, which CSS animations and transitions are not.</p>
+          </aside>
+        </section>
+        <section>
+          <h2><a href="http://www.pfisterfaucets.com/innovations/xtract/water-pfacts" target="_blank">Xtract</a></h2>
+          <p>IE8+ compatible.</p>
+        </section>
+      </section>
+      <!-- GSAP simple animations -->
+      <section>
+        <section>
+          <h2>GSAP Simple Animations</h2>
+        </section>
+        <section>
+          <p data-height="300" data-theme-id="22061" data-slug-hash="ajgtq" data-default-tab="result" data-user="GreenSock" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/GreenSock/pen/ajgtq/">Easing</a> by GreenSock (<a href="http://codepen.io/GreenSock">@GreenSock</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+          <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+        <section>
+          <p data-height="300" data-theme-id="22061" data-slug-hash="wsxjv" data-default-tab="result" data-user="GreenSock" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/GreenSock/pen/wsxjv/">Animate Multiple Properties</a> by GreenSock (<a href="http://codepen.io/GreenSock">@GreenSock</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+          <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+          <aside class="notes">
+            <p>So ultimately, none of this is stuff you couldn't do in CSS (though you would not be able to get the same browser support.) Unless these types of animations were absolutely crucial to the user for usability purposes, it is probably not necessary for older browsers to have them and thus CSS would most likely be sufficient.</p>
+          </aside>
+        </section>
+      </section>
+      <!-- Attempting a complex animation with CSS vs GSAP -->
+      <section>
+        <section>
+          <h2>Attempting a complex animation with CSS vs GSAP</h2>
+        </section>
+        <section>
+          <p data-height="600" data-theme-id="22060" data-slug-hash="MwLaGB" data-default-tab="result" data-user="ayashi" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/ayashi/pen/MwLaGB/">Jobbie</a> by Caitlin Bailey (<a href="http://codepen.io/ayashi">@ayashi</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+          <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+          <aside class="notes">
+            <p>I tried to make this animation with CSS animation first before I threw in the towel. I was experiencing very jerky animation that looked terrible and was very time consuming to adjust.</p>
+            <p>I couldn't find any good information on animating along a path (except for some SVG related items which, especially at the time, had poor browser support). Also if you notice the image does not look crisp at all which may be related to how the browser is handling the transforms.</p>
+            <p>GSAP allowed me to do the exact animation I wanted extremely easily. Editing the path was simple (though the path I ended up with was a little different from the one used in the codepen) and I got nice smooth animation and a crisp image.</p>
+          </aside>
+        </section>
+      </section>
+      <!-- What other cool stuff can GSAP do? -->
+      <section>
+        <section>
+          <h2>What other cool stuff can GSAP do?</h2>
+          <aside class="notes">
+            <p>Well there's much more complex stuff that can be done than just animating along a path. Take, for example, Sarah Drasner's Huggy Laser Pandas.</p>
+          </aside>
+        </section>
+        <section>
+          <h2><a href="http://codepen.io/sdras/full/waXKPw/" target="_blank">Sarah Drasner's Huggy Laser Pandas</a></h2>
+          <aside class="notes">
+            <p>Sarah Drasner shared this with us at O'Reilly Conf earlier this year. It uses GSAP and SVG and it's incredible what she was able to accomplish with it!</p>
+          </aside>
+        </section>
+      </section>
+      <!-- Conclusions -->
+      <section>
+        <section>
+          <h2>Conclusions</h2>
+        </section>
+        <section>
+          <h2>Sites using GSAP</h2>
+          <ul>
+            <li><a href="http://waaark.com/" target="_blank">http://waaark.com/</a></li>
+            <li><a href="https://fleximize.com/mission/" target="_blank">https://fleximize.com/mission/</a></li>
+            <li><a href="http://www.locus-solus.it/en" target="_blank">http://www.locus-solus.it/en</a></li>
+            <li><a href="https://www.sirinlabs.com/discover" target="_blank">https://www.sirinlabs.com/discover</a></li>
+          </ul>
+        </section>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      dependencies: [
+        {
+          src: 'plugin/live-coding.js', async: true, condition: function() { return !!document.body.classList; },
+          src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }
+
+        }
+      ],
+      history: true
+    });
+  </script>
+</body>
+</html>
